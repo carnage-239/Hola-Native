@@ -1,0 +1,24 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "env": {
+    "production": {}
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "components": "./App/Components",
+          "colors": "./App/Themes/Colors",
+          "fonts": "./App/Themes/Fonts",
+          "metrics": "./App/Themes/Metrics",
+          "images": "./App/Themes/Images",
+          "size": "./App/Themes/Size",
+          "utils": "./App/Themes/Utility",
+          "applicationStyles": "./App/Themes/Application.styles"
+        }
+      }
+    ]
+  ]
+}
